@@ -50,4 +50,4 @@ def register_hstore_handler(connection, **kwargs):
     else:
         register_hstore(connection.connection, globally=True)
 
-connection_handler.attach_handler(register_hstore_handler, vendor="postgresql", unique=True)
+connection_handler.attach_handler(register_hstore_handler, vendor="postgresql", unique=False)
